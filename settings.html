@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Plan</title>
     <!-- add any other stylesheets here -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <h1 class="text-3xl text-clifford font-bold">
-        Hello world!
-      </h1>
+    <div class="md:container pt-20 px-20 md:mx-auto">
+        <h1 class="text-3xl text-left-20px font-bold">
+        Settings:
+        </h1>
+        <div class="container pt-10 text-2xl font-bold">
+            <ol>
+                <li class="px-3"><button class="btn bg-transparent hover:bg-slate-500 font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded">Alerts</button></li>
+                <li class="pt-5"><button class="btn bg-transparent hover:bg-slate-500 font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded">Themes</button></li>
+            </ol>
+        </div>
+    </div>    
+        
+    
 </body>
 <script src="./assets/script.js"></script>
 </html>
