@@ -9,7 +9,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
+<body class="bg-gray-300">
+    <h1 class="text-center text-6xl">The Plan</h1>
+    <main class="flex w-screen ">
+
+        <div class="w-1/12 bg-gray-500 p-2">
+            <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                Today
+              </button>
+              <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                This week
+              </button>
+              <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                Settings
+              </button>
+        </div>
+
+        <div class="w-8/12 bg-gray-700">
+            <iframe class="w-full p-4" src="https://calendar.google.com/calendar/embed?src=tf15iod1oo86tn29o835j0d348%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="flex justify-center p-2 w-3/12 bg-gray-500">
+            <table class="table-auto h-3/6 w-9/12 border border-width: 3px; border-black">
+                <thread>
+                    <tr class="border border-2 border-black">
+                        <th>
+                            "Today's Date"
+                        </th>                    
+                    </tr>
+                    <tr class="border border-2 border-black">
+                        <th>
+                            Urgent Tasks
+                        </th>
+                    </tr>
+                </thread>
+                <tbody class="text-center">
+                    <tr class="border border-1 border-black">
+                        <td>test text 1</td>
+                    </tr>
+                    <tr class="border border-1 border-black">
+                        <td>test text 2</td>
+                    </tr>
+                    <tr class="border border-1 border-black">
+                        <td>test text 3</td>
+                    </tr>
+                    <tr class="border border-1 border-black">
+                        <td>test text 4</td>
+                    </tr>
+                    <tr class="border border-1 border-black">
+                        <td>test text 5</td>
+                    </tr>
+                    <tr class="border border-1 border-black">
+                        <td>test text 6</td>
+                    </tr>
+                </tbody>
+
+            </table>
+           
+
+        </div>
+    </main>
     
 </body>
 <script src="./assets/script.js"></script>
