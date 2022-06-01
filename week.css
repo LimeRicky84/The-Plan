@@ -41,7 +41,7 @@ table.black {
   border-collapse: collapse;
 }
 table.black td, table.black th {
-  border: 1px solid grey;
+  border: 4px solid grey;
   padding: 3px 2px;
 }
 table.black tbody td {
