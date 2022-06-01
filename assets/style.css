@@ -1,0 +1,23 @@
+td, th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: ;
+}
+
+td {
+    background-color: #94a3b8;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+td:hover {
+    background-color: #475569;
+    color: #e2e8f0;
+}
+
+
+/* make the hover command work on the entire line and not just one box */
