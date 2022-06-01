@@ -33,20 +33,6 @@ body {font-family: Verdana, sans-serif;}
   padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: white;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: black;
-  text-align: center;
-}
-
 /* Table */
 table.black {
   border: 1px solid grey;
@@ -77,8 +63,17 @@ table.black tfoot {
   font-size: 14px;
   font-weight: bold;
   color: #FFFFFF;
-  height: 160%;
+  height: 170px;
 }
 table.black tfoot td {
   font-size: 14px;
 }
+ /* button */
+.event {
+  text-align: center;
+  width: wrap;
+  height: wrap;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+ }
