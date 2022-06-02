@@ -1,3 +1,48 @@
+/* base colors - Color mode 1 */
+.bg-a1 {
+    background-color: rgb(209 213 219);
+}
+.bg-a2 {
+    background-color: rgb(107 114 128);
+}
+.bg-a3 {
+    background-color: rgb(55 65 81);
+}
+
+/* Color mode 2 */
+.bg-b1 {
+    background-color: #f2bc94;
+}
+.bg-b2 {
+    background-color: #f4af1b;
+}
+.bg-b3 {
+    background-color: #00154f;
+}
+
+/* Color mode 3 */
+.bg-c1 {
+    background-color: #ffb500;
+}
+.bg-c2 {
+    background-color: #f93800;
+}
+.bg-c3 {
+    background-color: #283350;
+}
+
+/* Color mode 4 */
+.bg-d1 {
+    background-color: #6caca0;
+}
+.bg-d2 {
+    background-color: #c075b7;
+}
+.bg-d3 {
+    background-color: #64395f;
+}
+
+
 td, th {
     border: 2px solid black;
     text-align: center;
