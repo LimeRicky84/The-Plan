@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Plan</title>
     <!-- add any other stylesheets here -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body class="bg-gray-300">
-    <h1 class="text-center text-6xl">The Plan</h1>
+    <h1 class="text-center text-6xl">Planner</h1>
     <main class="flex w-screen ">
 
         <div class="w-24 bg-gray-300 bg-gray-500 p-2">
-            <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            <button
+                class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <a href="today.html">Today</a>
-              </button>
-              <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            </button>
+            <button
+                class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <a href="week.html">This Week</a>
-              </button>
-              <button class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            </button>
+            <button
+                class="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                 <a href="settings.html">Settings</a>
-              </button>
+            </button>
         </div>
 
         <div class="w-8/12 bg-gray-700">
             <!-- <iframe class="w-full p-4" src="https://calendar.google.com/calendar/embed?src=tf15iod1oo86tn29o835j0d348%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+            <div class="flex justify-row justify-center text-white">
+                <button id="previousMonth" class="px-2">&#60;</button>
+                <p id="month">Text for Month</p>
+                <button id="nextMonth"  class="px-2">&#62;</button>
+            </div>
             <div class="flex justify-center flex-row w-full">
                 <div class="w-24 bg-gray-500 text-center border border-black">Sunday</div>
                 <div class="w-24 bg-gray-500 text-center border border-black">Monday</div>
@@ -37,49 +48,58 @@
                 <div class="w-24 bg-gray-500 text-center border border-black">Saturday</div>
             </div>
             <div class="flex justify-center flex-row h-28">
-                <div class="w-24 bg-gray-300 text-left border border-black">1</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">2</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">3</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">4</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">5</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">6</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">7</div>
+                <div id="clbx01" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx02" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx03" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx04" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx05" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx06" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx07" class="w-24 bg-gray-300 text-left border border-black"></div>
             </div>
             <div class="flex justify-center flex-row h-28">
-                <div class="w-24 bg-gray-300 text-left border border-black">8</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">9</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">10</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">11</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">12</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">13</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">14</div>
+                <div id="clbx08" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx09" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx10" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx11" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx12" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx13" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx14" class="w-24 bg-gray-300 text-left border border-black"></div>
             </div>
             <div class="flex justify-center flex-row h-28">
-                <div class="w-24 bg-gray-300 text-left border border-black">15</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">16</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">17</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">18</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">19</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">20</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">21</div>
+                <div id="clbx15" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx16" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx17" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx18" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx19" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx20" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx21" class="w-24 bg-gray-300 text-left border border-black"></div>
             </div>
             <div class="flex justify-center flex-row h-28">
-                <div class="w-24 bg-gray-300 text-left border border-black">22</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">23</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">24</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">25</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">26</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">27</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">28</div>
+                <div id="clbx22" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx23" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx24" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx25" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx26" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx27" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx28" class="w-24 bg-gray-300 text-left border border-black"></div>
             </div>
             <div class="flex justify-center flex-row h-28">
-                <div class="w-24 bg-gray-300 text-left border border-black">29</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">30</div>
-                <div class="w-24 bg-gray-300 text-left border border-black">31</div>
-                <div class="w-24 bg-gray-300 text-left border border-black"></div>
-                <div class="w-24 bg-gray-300 text-left border border-black"></div>
-                <div class="w-24 bg-gray-300 text-left border border-black"></div>
-                <div class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx29" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx30" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx31" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx32" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx33" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx34" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx35" class="w-24 bg-gray-300 text-left border border-black"></div>
+            </div>
+            <div class="flex justify-center flex-row h-28">
+                <div id="clbx36" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx37" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx38" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx39" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx40" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx41" class="w-24 bg-gray-300 text-left border border-black"></div>
+                <div id="clbx42" class="w-24 bg-gray-300 text-left border border-black"></div>
             </div>
         </div>
 
@@ -87,9 +107,9 @@
             <table class="table-auto h-3/6 w-9/12 border border-width: 3px; border-black">
                 <thread>
                     <tr class="border border-2 border-black">
-                        <th>
+                        <th id="todaysDate">
                             "Today's Date"
-                        </th>                    
+                        </th>
                     </tr>
                     <tr class="border border-2 border-black">
                         <th>
@@ -99,31 +119,35 @@
                 </thread>
                 <tbody class="text-center">
                     <tr class="border border-1 border-black">
-                        <td>test text 1</td>
+                        <td id="urgent1"></td>
                     </tr>
                     <tr class="border border-1 border-black">
-                        <td>test text 2</td>
+                        <td id="urgent2"></td>
                     </tr>
                     <tr class="border border-1 border-black">
-                        <td>test text 3</td>
+                        <td id="urgent3"></td>
                     </tr>
                     <tr class="border border-1 border-black">
-                        <td>test text 4</td>
+                        <td id="urgent4"></td>
                     </tr>
                     <tr class="border border-1 border-black">
-                        <td>test text 5</td>
+                        <td id="urgent5"></td>
                     </tr>
                     <tr class="border border-1 border-black">
-                        <td>test text 6</td>
+                        <td id="urgent6"></td>
                     </tr>
                 </tbody>
 
             </table>
-           
+
 
         </div>
     </main>
-    
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="./assets/script.js"></script>
+
 </html>
