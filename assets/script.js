@@ -70,6 +70,7 @@ if (monthEl) {
   setDay();
   x = " "
   function sundayStart() {
+
     calbox1.textContent = 1
     calbox2.textContent = 2
     calbox3.textContent = 3
@@ -532,6 +533,31 @@ if (monthEl) {
   }
   prevMonthEl.addEventListener("click", setAprLength);
   nextMonthEl.addEventListener("click", setAprLength);
+}
 
+/* set today's date for urgent task table */
+var todayEl = moment().format('MMM DD, YYYY');
+dateEl.textContent = todayEl
+wednesdayStart();
+}
+// set today info on today page
+var timeEl = document.getElementById("time-display");
+var timeDEl = moment().format('MMM DD YY, h:mm a');
+console.log(timeDEl)
+timeEl.textContent = timeDEl
 
+function dropdown() {
+  document.getElementById("dropdownMenu").classList.toggle("show")
+};
+var dropdowns = document.getElementsByName("content")
+
+window.onclick = function(event) {
+  console.log("clicked")
+  if (event.target.matches('#dropdownButton')) {
+    var dropdown = document.getElementByName("content")
+
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      } else {dropdown.classList.add('show')}
+  }
 }
