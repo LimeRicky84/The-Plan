@@ -382,6 +382,3 @@ var todayEl = moment().format('MMM DD, YYYY');
 dateEl.textContent = todayEl
 wednesdayStart();
 
-
-
-

@@ -42,15 +42,17 @@
     background-color: #64395f;
 }
 
-
-td, th {
-    border: 2px solid black;
+.grid-head {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: solid 18px #3f3f46;
+    border-right: solid 18px #3f3f46;
+    border-bottom: solid 8px #3f3f46; 
+    font-size: 30px;
     text-align: center;
-    padding: 8px;
-}
+  }
 
-th {
-    background-color: ;
+tr {
+    border-top: 3px solid rgba(0, 0, 0, 0.8);
 }
 
 td {
