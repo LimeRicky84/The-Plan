@@ -55,6 +55,12 @@ tr {
     border-top: 3px solid rgba(0, 0, 0, 0.8);
 }
 
+
+.show {
+    display: none;
+}
+
+
 td {
     background-color: #94a3b8;
     color: #0f172a;

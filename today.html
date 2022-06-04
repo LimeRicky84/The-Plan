@@ -13,13 +13,13 @@
 <body class="bg-gray-300">
     <header class="md:container pt-10 pb-5 md:mx-auto">
         <h1 id="time-display" class="text-3xl text-center font-bold">
-            00:00:00
+            todaysDate:
         </h1>
-        <div>
-            <button id="dropdownButton" class="flex justify-center bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 focus:ring-4 focus:outline-none focus:ring-slate-600 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-slate-800"
+        <div class="flex justify-center pt-5">
+            <button id="dropdownButton" onclick="dropdown()" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 focus:ring-4 focus:outline-none focus:ring-slate-600 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-slate-800"
              type="button">Add Event <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
                 <!-- Dropdown menu -->
-                <div id="dropdownMenu" class="z-10 bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                <div id="dropdownMenu" name="content" class="show z-10 bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
                     <form>
                         <div class="mb-6">
                         <label for="event" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Event</label>
@@ -30,7 +30,6 @@
                             <input type="text"
                                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                 placeholder="Select a time" />
-                            <label for="floatingInput" class="text-gray-700">Select a time</label>
                             </div>
                         </div>
                         <div class="flex items-center justify-center">
@@ -38,7 +37,6 @@
                             <input type="text"
                                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                 placeholder="Select a date" />
-                            <label for="floatingInput" class="text-gray-700">Select a date</label>
                             </div>
                         </div>
                         <div class="flex items-start mb-6">
@@ -57,32 +55,56 @@
             <!-- need to shrink the time box but keep the table size the same -->
                 <tr class="table-auto grid-head">
                     <th>Event</th>
-                    <th>Countdown</th>
+                    <th>Time</th>
                 </tr>
                 <tr>
                     <td>Appointment: sample text, text text text text text 
                     </td>
-                    <td>07-23, 10:00AM</td>
+                    <td>6:00AM</td>
                 </tr>    
                 <tr>   
                     <td>sampleD2</td>
-                    <td>sampleT2</td>
+                    <td>7:00AM</td>
                 </tr>
                 <tr>
                     <td>sampleD3</td>
-                    <td>sampleT3</td>
+                    <td>8:00AM</td>
                 </tr>    
                 <tr>    
                     <td>sampleD4</td>
-                    <td>sampleT4</td>
+                    <td>9:00AM</td>
                 </tr>
                 <tr>    
                     <td>sampleD5</td>
-                    <td>sampleT5</td>
+                    <td>10:00AM</td>
                 </tr>
                 <tr>    
                     <td>sampleD6</td>
-                    <td>sampleT6</td>
+                    <td>11:00AM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD7</td>
+                    <td>12:00PM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD8</td>
+                    <td>1:00PM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD9</td>
+                    <td>2:00PM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD10</td>
+                    <td>3:00PM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD11</td>
+                    <td>4:00PM</td>
+                </tr>
+                <tr>    
+                    <td>sampleD12</td>
+                    <td>5:00PM</td>
                 </tr>
             </table>
             <div class="w-1 p-1"></div>
@@ -93,8 +115,11 @@
         <button class="w-1/12 justify-center bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 dark:focus:ring-slate-800 hover:text-slate-200 font-semibold py-2 px-4 border border-gray-800 rounded shadow">
             <a href="index.html">Main</a>
           </button>
+          
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="./assets/script.js"></script>
 </html>
