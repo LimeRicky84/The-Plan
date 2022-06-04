@@ -536,7 +536,7 @@ if (monthEl) {
 }
 
 /* set today's date for urgent task table */
-var todayEl = moment().format('MMM DD, YYYY');
+var todayEl = moment().format('MMM DD, YYYY');{
 dateEl.textContent = todayEl
 wednesdayStart();
 }
