@@ -27,7 +27,7 @@
       <tr>
       <th >Monday</th>
       <th>Tuesday</th>
-      <th>Wendsday</th>
+      <th>Wednesday</th>
       <th>Thursday</th>
       <th>Friday</th>
       <th>Saturday</th>
@@ -37,23 +37,102 @@
 
     <tfoot>
       <tr>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
-      <td class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="monday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="tuesday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="wednesday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="thursday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="friday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="saturday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
+      <td id="sunday" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 rounded h-36"></td>
       </tr>
     </tfoot>
     <tbody>
     </table>
    
   <div class="event">
-    <Ne>New Event</Ne>
+    <button class="btn" id="new-event">New Event</button>
   </div>
 
    <ul class="task"></ul>
+
+  <div class="popup " id="popup">
+
+    <h2 class="popup-heading">Enter Event Details</h2>
+    <form action="#" class="popup-form">
+
+      <input type="text" placeholder="Event title" id="title">
+      <select id="day">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+      </select>
+
+      <button type="submit" id="save-event">Save Event</button>
+      <span class="popup-close-btn" id="close-popup">Close</span>
+
+    </form>
+
+  </div>
+
+  <script>
+
+    var newEventbtn = document.getElementById('new-event')
+
+    newEventbtn.addEventListener('click',function(){
+
+      var  popup = document.getElementById('popup')
+
+        popup.classList.add('active');
+
+    })
+
+
+    var popupCloseBtn = document.getElementById('close-popup')
+
+    popupCloseBtn.addEventListener('click',function(){
+
+      closePopup();
+
+    })
+
+
+    var saveEventBtn = document.getElementById('save-event')
+
+    saveEventBtn.addEventListener('click',function(){
+
+      var title = document.getElementById('title').value;
+      var day = document.getElementById('day').value;
+      
+      var calerdarBox = document.getElementById(day)
+
+      if(title === '')
+      {
+        calerdarBox.innerHTML = '';
+      }
+      else
+      {
+        calerdarBox.innerHTML = calerdarBox.innerHTML +'<br>'+title;
+      }
+      
+
+      closePopup();
+
+      document.getElementById('title').value = '';
+
+    })
+
+
+
+    function closePopup(){
+      var  popup = document.getElementById('popup')
+      popup.classList.remove('active');  
+    }
+
+  </script>
 
   </body>  
    
