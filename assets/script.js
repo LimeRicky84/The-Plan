@@ -536,16 +536,17 @@ if (monthEl) {
 }
 
 /* set today's date for urgent task table */
-var todayEl = moment().format('MMM DD, YYYY');
-dateEl.textContent = todayEl
-wednesdayStart();
-}
+// var todayEl = moment().format('MMM DD, YYYY');
+// dateEl.textContent = todayEl
+// wednesdayStart();
+
 // set today info on today page
 var timeEl = document.getElementById("time-display");
-var timeDEl = moment().format('MMM DD YY, h:mm a');
+var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
 console.log(timeDEl)
-timeEl.textContent = timeDEl
+timeEl.textContent = "Today's Date: "+ timeDEl
 
+// dropdown toggle functions
 function dropdown() {
   document.getElementById("dropdownMenu").classList.toggle("show")
 };
@@ -561,3 +562,4 @@ window.onclick = function(event) {
       } else {dropdown.classList.add('show')}
   }
 }
+
