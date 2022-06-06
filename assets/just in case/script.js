@@ -3,8 +3,6 @@ var monthEl = document.getElementById("month");
 var prevMonthEl = document.getElementById("previousMonth");
 var nextMonthEl = document.getElementById("nextMonth");
 
-if (monthEl) {
-
 var calbox1 = document.getElementById('clbx01');
 var calbox2 = document.getElementById('clbx02');
 var calbox3 = document.getElementById('clbx03');
@@ -46,7 +44,7 @@ var monthValue = 1;
 var calendarStart = moment("06.01.2022");
 var calendarFirstDay = moment("06.01.2022");
 
-
+if (monthEl) {
   /* set calendar month*/
   var calendarMonth = moment().format('MMMM');
   monthEl.textContent = calendarMonth
@@ -375,7 +373,7 @@ var calendarFirstDay = moment("06.01.2022");
     } else if (startDay === "Saturday") {
       saturdayStart();
     }
-    monthValue += 1;
+       monthValue += 1;
     return;
   }
 
@@ -535,31 +533,31 @@ var calendarFirstDay = moment("06.01.2022");
   }
   prevMonthEl.addEventListener("click", setAprLength);
   nextMonthEl.addEventListener("click", setAprLength);
+}
 
-
+/* set today's date for urgent task table */
+var todayEl = moment().format('MMM DD, YYYY');{
+dateEl.textContent = todayEl
+wednesdayStart();
+}
 // set today info on today page
 var timeEl = document.getElementById("time-display");
-var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
-  if (timeEl) {
+var timeDEl = moment().format('MMM DD YY, h:mm a');
 console.log(timeDEl)
-timeEl.textContent = "Today's Date: "+ timeDEl
+timeEl.textContent = timeDEl
 
-// dropdown toggle functions
 function dropdown() {
   document.getElementById("dropdownMenu").classList.toggle("show")
 };
 var dropdowns = document.getElementsByName("content")
 
-
-  window.onclick = function (event) {
-    console.log("clicked")
-    if (event.target.matches('#dropdownButton')) {
-      var dropdown = document.getElementByName("content")
+window.onclick = function(event) {
+  console.log("clicked")
+  if (event.target.matches('#dropdownButton')) {
+    var dropdown = document.getElementByName("content")
 
       if (dropdown.classList.contains('show')) {
         dropdown.classList.remove('show');
-      } else { dropdown.classList.add('show') }
-    }
+      } else {dropdown.classList.add('show')}
   }
 }
-
