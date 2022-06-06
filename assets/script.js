@@ -5,6 +5,7 @@ var nextMonthEl = document.getElementById("nextMonth");
 
 if (monthEl) {
 
+  
 var calbox1 = document.getElementById('clbx01');
 var calbox2 = document.getElementById('clbx02');
 var calbox3 = document.getElementById('clbx03');
@@ -67,10 +68,13 @@ var calendarFirstDay = moment("06.01.2022");
     } else if (startDay1 === "Saturday") {
       calbox7.textContent = 1
     }
+ 
   }
 
   setDay();
+  
   x = " "
+
   function sundayStart() {
 
     calbox1.textContent = 1
@@ -226,7 +230,7 @@ var calendarFirstDay = moment("06.01.2022");
     calbox31.textContent = 28
     calbox32.textContent = 29
     calbox33.textContent = 30
-    calbox34.textContent = 31
+    calbox34.textContent = x
     calbox35.textContent = x
     calbox36.textContent = x
     calbox37.textContent = x
@@ -535,6 +539,201 @@ var calendarFirstDay = moment("06.01.2022");
   }
   prevMonthEl.addEventListener("click", setAprLength);
   nextMonthEl.addEventListener("click", setAprLength);
+
+  function junStartSun() {
+    calbox31.textContent = x
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartMon() {
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartTue() {
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartWed() {
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartThu() {
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartFri() {
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function junStartSat() {
+    calbox37.textContent = x
+  }
+  function setJunLength() {
+    if (monthEl.textContent === "June") {
+      if (calbox1.textContent === "1") {
+        junStartSun();
+      } else if (calbox2.textContent === "1") {
+        junStartMon();
+      } else if (calbox3.textContent === "1") {
+        junStartTue();
+      } else if (calbox4.textContent === "1") {
+        junStartWed();
+      } else if (calbox5.textContent === "1") {
+        junStartThu();
+      } else if (calbox6.textContent === "1") {
+        junStartFri();
+      } else if (calbox7.textContent === "1") {
+        junStartSat();
+      }
+    }
+
+  }
+  prevMonthEl.addEventListener("click", setJunLength);
+  nextMonthEl.addEventListener("click", setJunLength);
+
+  function septStartSun() {
+    calbox31.textContent = x
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartMon() {
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartTue() {
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartWed() {
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartThu() {
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartFri() {
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function septStartSat() {
+    calbox37.textContent = x
+  }
+  function setSeptLength() {
+    if (monthEl.textContent === "September") {
+      if (calbox1.textContent === "1") {
+        septStartSun();
+      } else if (calbox2.textContent === "1") {
+        septStartMon();
+      } else if (calbox3.textContent === "1") {
+        septStartTue();
+      } else if (calbox4.textContent === "1") {
+        septStartWed();
+      } else if (calbox5.textContent === "1") {
+        septStartThu();
+      } else if (calbox6.textContent === "1") {
+        septStartFri();
+      } else if (calbox7.textContent === "1") {
+        septStartSat();
+      }
+    }
+
+  }
+  prevMonthEl.addEventListener("click", setSeptLength);
+  nextMonthEl.addEventListener("click", setSeptLength);
+
+  function novStartSun() {
+    calbox31.textContent = x
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartMon() {
+    calbox32.textContent = x
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartTue() {
+    calbox33.textContent = x
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartWed() {
+    calbox34.textContent = x
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartThu() {
+    calbox35.textContent = x
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartFri() {
+    calbox36.textContent = x
+    calbox37.textContent = x
+  }
+  function novStartSat() {
+    calbox37.textContent = x
+  }
+  function setNovLength() {
+    if (monthEl.textContent === "November") {
+      if (calbox1.textContent === "1") {
+        novStartSun();
+      } else if (calbox2.textContent === "1") {
+        novStartMon();
+      } else if (calbox3.textContent === "1") {
+        novStartTue();
+      } else if (calbox4.textContent === "1") {
+        novStartWed();
+      } else if (calbox5.textContent === "1") {
+        novStartThu();
+      } else if (calbox6.textContent === "1") {
+        novStartFri();
+      } else if (calbox7.textContent === "1") {
+        novStartSat();
+      }
+    }
+
+  }
+  prevMonthEl.addEventListener("click", setNovLength);
+  nextMonthEl.addEventListener("click", setNovLength);
 }
 
 // set today info on today page
