@@ -535,7 +535,7 @@ var calendarFirstDay = moment("06.01.2022");
   }
   prevMonthEl.addEventListener("click", setAprLength);
   nextMonthEl.addEventListener("click", setAprLength);
-
+}
 
 // set today info on today page
 var timeEl = document.getElementById("time-display");
@@ -561,5 +561,5 @@ var dropdowns = document.getElementsByName("content")
       } else { dropdown.classList.add('show') }
     }
   }
-}
-}
+  }
+
