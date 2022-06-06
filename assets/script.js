@@ -5,47 +5,47 @@ var nextMonthEl = document.getElementById("nextMonth");
 
 if (monthEl) {
 
-  
-var calbox1 = document.getElementById('clbx01');
-var calbox2 = document.getElementById('clbx02');
-var calbox3 = document.getElementById('clbx03');
-var calbox4 = document.getElementById('clbx04');
-var calbox5 = document.getElementById('clbx05');
-var calbox6 = document.getElementById('clbx06');
-var calbox7 = document.getElementById('clbx07');
-var calbox8 = document.getElementById('clbx08');
-var calbox9 = document.getElementById('clbx09');
-var calbox10 = document.getElementById('clbx10');
-var calbox11 = document.getElementById('clbx11');
-var calbox12 = document.getElementById('clbx12');
-var calbox13 = document.getElementById('clbx13');
-var calbox14 = document.getElementById('clbx14');
-var calbox15 = document.getElementById('clbx15');
-var calbox16 = document.getElementById('clbx16');
-var calbox17 = document.getElementById('clbx17');
-var calbox18 = document.getElementById('clbx18');
-var calbox19 = document.getElementById('clbx19');
-var calbox20 = document.getElementById('clbx20');
-var calbox21 = document.getElementById('clbx21');
-var calbox22 = document.getElementById('clbx22');
-var calbox23 = document.getElementById('clbx23');
-var calbox24 = document.getElementById('clbx24');
-var calbox25 = document.getElementById('clbx25');
-var calbox26 = document.getElementById('clbx26');
-var calbox27 = document.getElementById('clbx27');
-var calbox28 = document.getElementById('clbx28');
-var calbox29 = document.getElementById('clbx29');
-var calbox30 = document.getElementById('clbx30');
-var calbox31 = document.getElementById('clbx31');
-var calbox32 = document.getElementById('clbx32');
-var calbox33 = document.getElementById('clbx33');
-var calbox34 = document.getElementById('clbx34');
-var calbox35 = document.getElementById('clbx35');
-var calbox36 = document.getElementById('clbx36');
-var calbox37 = document.getElementById('clbx37');
-var monthValue = 1;
-var calendarStart = moment("06.01.2022");
-var calendarFirstDay = moment("06.01.2022");
+
+  var calbox1 = document.getElementById('clbx01');
+  var calbox2 = document.getElementById('clbx02');
+  var calbox3 = document.getElementById('clbx03');
+  var calbox4 = document.getElementById('clbx04');
+  var calbox5 = document.getElementById('clbx05');
+  var calbox6 = document.getElementById('clbx06');
+  var calbox7 = document.getElementById('clbx07');
+  var calbox8 = document.getElementById('clbx08');
+  var calbox9 = document.getElementById('clbx09');
+  var calbox10 = document.getElementById('clbx10');
+  var calbox11 = document.getElementById('clbx11');
+  var calbox12 = document.getElementById('clbx12');
+  var calbox13 = document.getElementById('clbx13');
+  var calbox14 = document.getElementById('clbx14');
+  var calbox15 = document.getElementById('clbx15');
+  var calbox16 = document.getElementById('clbx16');
+  var calbox17 = document.getElementById('clbx17');
+  var calbox18 = document.getElementById('clbx18');
+  var calbox19 = document.getElementById('clbx19');
+  var calbox20 = document.getElementById('clbx20');
+  var calbox21 = document.getElementById('clbx21');
+  var calbox22 = document.getElementById('clbx22');
+  var calbox23 = document.getElementById('clbx23');
+  var calbox24 = document.getElementById('clbx24');
+  var calbox25 = document.getElementById('clbx25');
+  var calbox26 = document.getElementById('clbx26');
+  var calbox27 = document.getElementById('clbx27');
+  var calbox28 = document.getElementById('clbx28');
+  var calbox29 = document.getElementById('clbx29');
+  var calbox30 = document.getElementById('clbx30');
+  var calbox31 = document.getElementById('clbx31');
+  var calbox32 = document.getElementById('clbx32');
+  var calbox33 = document.getElementById('clbx33');
+  var calbox34 = document.getElementById('clbx34');
+  var calbox35 = document.getElementById('clbx35');
+  var calbox36 = document.getElementById('clbx36');
+  var calbox37 = document.getElementById('clbx37');
+  var monthValue = 1;
+  var calendarStart = moment("06.01.2022");
+  var calendarFirstDay = moment("06.01.2022");
 
 
   /* set calendar month*/
@@ -68,11 +68,11 @@ var calendarFirstDay = moment("06.01.2022");
     } else if (startDay1 === "Saturday") {
       calbox7.textContent = 1
     }
- 
+
   }
 
   setDay();
-  
+
   x = " "
 
   function sundayStart() {
@@ -734,20 +734,63 @@ var calendarFirstDay = moment("06.01.2022");
   }
   prevMonthEl.addEventListener("click", setNovLength);
   nextMonthEl.addEventListener("click", setNovLength);
+
+  function eventClickTest() {
+    console.log("Success!")
+  }
+  calbox1.addEventListener("click", eventClickTest);
+  calbox2.addEventListener("click", eventClickTest);
+  calbox3.addEventListener("click", eventClickTest);
+  calbox4.addEventListener("click", eventClickTest);
+  calbox5.addEventListener("click", eventClickTest);
+  calbox6.addEventListener("click", eventClickTest);
+  calbox7.addEventListener("click", eventClickTest);
+  calbox8.addEventListener("click", eventClickTest);
+  calbox9.addEventListener("click", eventClickTest);
+  calbox10.addEventListener("click", eventClickTest);
+  calbox11.addEventListener("click", eventClickTest);
+  calbox12.addEventListener("click", eventClickTest);
+  calbox13.addEventListener("click", eventClickTest);
+  calbox14.addEventListener("click", eventClickTest);
+  calbox15.addEventListener("click", eventClickTest);
+  calbox16.addEventListener("click", eventClickTest);
+  calbox17.addEventListener("click", eventClickTest);
+  calbox18.addEventListener("click", eventClickTest);
+  calbox19.addEventListener("click", eventClickTest);
+  calbox20.addEventListener("click", eventClickTest);
+  calbox21.addEventListener("click", eventClickTest);
+  calbox22.addEventListener("click", eventClickTest);
+  calbox23.addEventListener("click", eventClickTest);
+  calbox24.addEventListener("click", eventClickTest);
+  calbox25.addEventListener("click", eventClickTest);
+  calbox26.addEventListener("click", eventClickTest);
+  calbox27.addEventListener("click", eventClickTest);
+  calbox28.addEventListener("click", eventClickTest);
+  calbox29.addEventListener("click", eventClickTest);
+  calbox30.addEventListener("click", eventClickTest);
+  calbox31.addEventListener("click", eventClickTest);
+  calbox32.addEventListener("click", eventClickTest);
+  calbox33.addEventListener("click", eventClickTest);
+  calbox34.addEventListener("click", eventClickTest);
+  calbox35.addEventListener("click", eventClickTest);
+  calbox36.addEventListener("click", eventClickTest);
+  calbox37.addEventListener("click", eventClickTest);
+
+
 }
 
 // set today info on today page
 var timeEl = document.getElementById("time-display");
 var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
-  if (timeEl) {
-console.log(timeDEl)
-timeEl.textContent = "Today's Date: "+ timeDEl
+if (timeEl) {
+  console.log(timeDEl)
+  timeEl.textContent = "Today's Date: " + timeDEl
 
-// dropdown toggle functions
-function dropdown() {
-  document.getElementById("dropdownMenu").classList.toggle("show")
-};
-var dropdowns = document.getElementsByName("content")
+  // dropdown toggle functions
+  function dropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show")
+  };
+  var dropdowns = document.getElementsByName("content")
 
 
   window.onclick = function (event) {
@@ -760,5 +803,5 @@ var dropdowns = document.getElementsByName("content")
       } else { dropdown.classList.add('show') }
     }
   }
-  }
+}
 
