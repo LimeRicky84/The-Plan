@@ -536,19 +536,20 @@ var calendarFirstDay = moment("06.01.2022");
   prevMonthEl.addEventListener("click", setAprLength);
   nextMonthEl.addEventListener("click", setAprLength);
 
-  }
 
-  // set today info on today page
-  var timeEl = document.getElementById("time-display");
-  var timeDEl = moment().format('MMM DD YY, h:mm a');
+// set today info on today page
+var timeEl = document.getElementById("time-display");
+var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
   if (timeEl) {
-  console.log(timeDEl)
-  timeEl.textContent = timeDEl;
+console.log(timeDEl)
+timeEl.textContent = "Today's Date: "+ timeDEl
 
-  function dropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show")
-  };
-  var dropdowns = document.getElementsByName("content")
+// dropdown toggle functions
+function dropdown() {
+  document.getElementById("dropdownMenu").classList.toggle("show")
+};
+var dropdowns = document.getElementsByName("content")
+
 
   window.onclick = function (event) {
     console.log("clicked")
@@ -561,3 +562,4 @@ var calendarFirstDay = moment("06.01.2022");
     }
   }
 }
+

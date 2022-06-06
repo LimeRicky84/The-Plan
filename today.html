@@ -23,20 +23,20 @@
                     <form>
                         <div class="mb-6">
                         <label for="event" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Event</label>
-                        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Event Description" required>
+                        <input type="text" id="event" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Event Description">
                         </div>
                         <div class="flex justify-center">
                             <div class="timepicker relative form-floating mb-3 xl:w-96">
-                            <input type="text"
+                            <input type="text" id="time-picker"
                                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                placeholder="Select a time" />
+                                placeholder="Time" />
                             </div>
                         </div>
                         <div class="flex items-center justify-center">
                             <div class="datepicker relative form-floating mb-3 xl:w-96">
-                            <input type="text"
+                            <input type="text" id="date-picker"
                                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                placeholder="Select a date" />
+                                placeholder="Date" />
                             </div>
                         </div>
                         <div class="flex items-start mb-6">
@@ -58,53 +58,65 @@
                     <th>Time</th>
                 </tr>
                 <tr>
-                    <td>Appointment: sample text, text text text text text 
+                    <td id="box1" class="reactive">Appointment: sample text, text text text text text 
                     </td>
                     <td>6:00AM</td>
                 </tr>    
                 <tr>   
-                    <td>sampleD2</td>
+                    <td id="box2" class="reactive">sampleD2</td>
                     <td>7:00AM</td>
                 </tr>
                 <tr>
-                    <td>sampleD3</td>
+                    <td id="box3" class="reactive">sampleD3</td>
                     <td>8:00AM</td>
                 </tr>    
                 <tr>    
-                    <td>sampleD4</td>
+                    <td id="box4" class="reactive">sampleD4</td>
                     <td>9:00AM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD5</td>
+                    <td id="box5" class="reactive">sampleD5</td>
                     <td>10:00AM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD6</td>
+                    <td id="box6" class="reactive">sampleD6</td>
                     <td>11:00AM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD7</td>
+                    <td id="box7" class="reactive">sampleD7</td>
                     <td>12:00PM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD8</td>
+                    <td id="box8" class="reactive">sampleD8</td>
                     <td>1:00PM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD9</td>
+                    <td id="box9" class="reactive">sampleD9</td>
                     <td>2:00PM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD10</td>
+                    <td id="box10" class="reactive">sampleD10</td>
                     <td>3:00PM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD11</td>
+                    <td id="box11" class="reactive">sampleD11</td>
                     <td>4:00PM</td>
                 </tr>
                 <tr>    
-                    <td>sampleD12</td>
+                    <td id="box12" class="reactive">sampleD12</td>
                     <td>5:00PM</td>
+                </tr>
+                <tr>    
+                    <td id="box13" class="reactive">sampleD13</td>
+                    <td>6:00PM</td>
+                </tr>
+                <tr>    
+                    <td id="box14" class="reactive">sampleD14</td>
+                    <td>7:00PM</td>
+                </tr>
+                <tr>    
+                    <td id="box15" class="reactive">sampleD15</td>
+                    <td>8:00PM</td>
                 </tr>
             </table>
             <div class="w-1 p-1"></div>
