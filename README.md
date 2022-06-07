@@ -30,3 +30,4 @@ Themes - Change the color and appearance of the pages to better suit various use
 Dropdown Functionality - Ability to open a menu and input events in every cell of the calendar.
 
 Moment Alternatives - Moment is being kept current but is no longer supported.  A more current time API could increase functionality.
+
