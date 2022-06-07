@@ -1,13 +1,20 @@
 # The-Plan
 Class Project 1
 
+The planner consists of a Month, Week and Day format.  It allows users to add projects onto a calendar.  The user can then view the calendar in an applicable format to see what is due and when.
+
+Live Project: https://limericky84.github.io/The-Plan/
+
+We used Tailwind and css in the styling of the pages.
+
+# APIs used:
+
+* Moment.js for time organization
+* 
 
 Tailwind Cheat sheet:
 https://nerdcave.com/tailwind-cheat-sheet
 
-
-
-* Clone the index page into 3 more pages: Main, Today, Week, Settings
 
 * Jeremy: Main
 * Eric: Today, Settings
@@ -16,10 +23,10 @@ https://nerdcave.com/tailwind-cheat-sheet
 moment alternative API to call time to all of our pages: 
 https://vhudyma-blog.eu/the-best-momentjs-alternatives/
 
-Jeremy - rebuild calendar - grid, css color vars
+# Directions for future development:
 
-Eric - today grid
+Themes - Change the color and appearance of the pages to better suit various user preferences.
 
-Alex - "add event" button, week page
+Dropdown Functionality - Ability to open a menu and input events in every cell of the calendar.
 
-everybody - add main page buttons, spitball ideas in slack
+Moment Alternatives - Moment is being kept current but is no longer supported.  A more current time API could increase functionality.

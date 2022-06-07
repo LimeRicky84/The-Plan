@@ -807,27 +807,34 @@ function dropdown() {
 var eventEl = document.getElementById("event")
 var timePickEl = document.getElementById("time-picker")
 var datePickEl = document.getElementById("date-picker")
-var events = []
 
 function addEvents() {
+  var events = {
+    eventItem: eventEl.value,
+    timeItem: timePickEl.value,
+    dateItem: datePickEl.value
+  }
+  
   localStorage.setItem("events", JSON.stringify(events))
 }
-
+var submitButton = document.getElementById("submit-button")
 var dropDown = document.querySelector("#drop-down")
 
-dropDown.addEventListener("click", function(event){
+submitButton.addEventListener("click", function(event){
   event.preventDefault()
+  
   console.log("submit")
-  console.log(eventEl.value)
+  console.log(events.value)
   var inputData = eventEl.value.trim()
 
   if (eventEl === "") {
     return;
   }
-  events.push(inputData)
-  eventEl.value = ''
-  console.log(inputData.value)
   addEvents
+  // events.push(inputData)
+  eventEl.value = ''
+  timePickEl.value = ''
+  datePickEl.value = ''
 })
 }
 
