@@ -789,6 +789,7 @@ if (monthEl) {
   calbox36.addEventListener("click", eventClickTest);
   calbox37.addEventListener("click", eventClickTest);
 
+
   // function addText1() {
   //   var newLi = document.createElement("li");
   //   var newText = document.createTextNode("To Do: test");
@@ -840,25 +841,62 @@ if (monthEl) {
 var timeEl = document.getElementById("time-display");
 var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
 if (timeEl) {
-  console.log(timeDEl)
-  timeEl.textContent = "Today's Date: " + timeDEl
 
-  // dropdown toggle functions
-  function dropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show")
-  };
-  var dropdowns = document.getElementsByName("content")
+console.log(timeDEl)
+timeEl.textContent = "Today's Date: "+ timeDEl
+
+// dropdown toggle functions
+function dropdown() {
+  document.getElementById("dropdownMenu").classList.toggle("show")
+  console.log("clicked")
+};
+// var dropdowns = document.getElementsByName("content")
 
 
-  window.onclick = function (event) {
-    console.log("clicked")
-    if (event.target.matches('#dropdownButton')) {
-      var dropdown = document.getElementByName("content")
 
-      if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-      } else { dropdown.classList.add('show') }
-    }
+//   window.onclick = function (event) {
+//     console.log("clicked")
+//     if (event.target.matches('#dropdownButton')) {
+//       var dropdown = document.getElementByName("content")
+
+//       if (dropdown.classList.contains('show')) {
+//         dropdown.classList.remove('show');
+//       } else { dropdown.classList.add('show') }
+//     }
+//   }
+var eventEl = document.getElementById("event")
+var timePickEl = document.getElementById("time-picker")
+var datePickEl = document.getElementById("date-picker")
+
+function addEvents() {
+  var events = {
+    eventItem: eventEl.value,
+    timeItem: timePickEl.value,
+    dateItem: datePickEl.value
   }
+  
+  localStorage.setItem("events", JSON.stringify(events))
 }
+var submitButton = document.getElementById("submit-button")
+var dropDown = document.querySelector("#drop-down")
+
+submitButton.addEventListener("click", function(event){
+  event.preventDefault()
+  
+  console.log("submit")
+  console.log(events.value)
+  var inputData = eventEl.value.trim()
+
+  if (eventEl === "") {
+    return;
+  }
+  addEvents
+  // events.push(inputData)
+  eventEl.value = ''
+  timePickEl.value = ''
+  datePickEl.value = ''
+})
+}
+
+
 
