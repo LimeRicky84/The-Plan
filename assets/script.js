@@ -46,6 +46,19 @@ if (monthEl) {
   var monthValue = 1;
   var calendarStart = moment("06.01.2022");
   var calendarFirstDay = moment("06.01.2022");
+  var urgentTd1 = document.getElementById('urgent1');
+  var urgentTd2 = document.getElementById('urgent2');
+  var urgentTd3 = document.getElementById('urgent3');
+  var urgentTd4 = document.getElementById('urgent4');
+  var urgentTd5 = document.getElementById('urgent5');
+  var urgentTd6 = document.getElementById('urgent6');
+  var urgentTasks1 = document.getElementById('urgentUi1');
+  var urgentTasks2 = document.getElementById('urgentUi2');
+  var urgentTasks3 = document.getElementById('urgentUi3');
+  var urgentTasks4 = document.getElementById('urgentUi4');
+  var urgentTasks5 = document.getElementById('urgentUi5');
+  var urgentTasks6 = document.getElementById('urgentUi6');
+
 
 
   /* set calendar month*/
@@ -775,6 +788,50 @@ if (monthEl) {
   calbox35.addEventListener("click", eventClickTest);
   calbox36.addEventListener("click", eventClickTest);
   calbox37.addEventListener("click", eventClickTest);
+
+  // function addText1() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks1.appendChild(newLi);
+  // }
+  // function addText2() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks2.appendChild(newLi);
+  // }
+  // function addText3() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks3.appendChild(newLi);
+  // }
+  // function addText4() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks4.appendChild(newLi);
+  // }
+  // function addText5() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks5.appendChild(newLi);
+  // }
+  // function addText6() {
+  //   var newLi = document.createElement("li");
+  //   var newText = document.createTextNode("To Do: test");
+  //   newLi.appendChild(newText);
+  //   urgentTasks6.appendChild(newLi);
+  // }
+
+  // urgentTd1.addEventListener("click", addText1);
+  // urgentTd2.addEventListener("click", addText2);
+  // urgentTd3.addEventListener("click", addText3);
+  // urgentTd4.addEventListener("click", addText4);
+  // urgentTd5.addEventListener("click", addText5);
+  // urgentTd6.addEventListener("click", addText6);
 
 
 }
