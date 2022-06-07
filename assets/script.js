@@ -775,33 +775,61 @@ if (monthEl) {
   calbox35.addEventListener("click", eventClickTest);
   calbox36.addEventListener("click", eventClickTest);
   calbox37.addEventListener("click", eventClickTest);
-
-
 }
 
 // set today info on today page
 var timeEl = document.getElementById("time-display");
 var timeDEl = moment().format('MMM DD, YYYY, h:mm A');
 if (timeEl) {
-  console.log(timeDEl)
-  timeEl.textContent = "Today's Date: " + timeDEl
 
-  // dropdown toggle functions
-  function dropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show")
-  };
-  var dropdowns = document.getElementsByName("content")
+console.log(timeDEl)
+timeEl.textContent = "Today's Date: "+ timeDEl
+
+// dropdown toggle functions
+function dropdown() {
+  document.getElementById("dropdownMenu").classList.toggle("show")
+  console.log("clicked")
+};
+// var dropdowns = document.getElementsByName("content")
 
 
-  window.onclick = function (event) {
-    console.log("clicked")
-    if (event.target.matches('#dropdownButton')) {
-      var dropdown = document.getElementByName("content")
 
-      if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-      } else { dropdown.classList.add('show') }
-    }
-  }
+//   window.onclick = function (event) {
+//     console.log("clicked")
+//     if (event.target.matches('#dropdownButton')) {
+//       var dropdown = document.getElementByName("content")
+
+//       if (dropdown.classList.contains('show')) {
+//         dropdown.classList.remove('show');
+//       } else { dropdown.classList.add('show') }
+//     }
+//   }
+var eventEl = document.getElementById("event")
+var timePickEl = document.getElementById("time-picker")
+var datePickEl = document.getElementById("date-picker")
+var events = []
+
+function addEvents() {
+  localStorage.setItem("events", JSON.stringify(events))
 }
+
+var dropDown = document.querySelector("#drop-down")
+
+dropDown.addEventListener("click", function(event){
+  event.preventDefault()
+  console.log("submit")
+  console.log(eventEl.value)
+  var inputData = eventEl.value.trim()
+
+  if (eventEl === "") {
+    return;
+  }
+  events.push(inputData)
+  eventEl.value = ''
+  console.log(inputData.value)
+  addEvents
+})
+}
+
+
 

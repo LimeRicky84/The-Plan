@@ -17,10 +17,10 @@
         </h1>
         <div class="flex justify-center pt-5">
             <button id="dropdownButton" onclick="dropdown()" class="bg-slate-400 text-slate-900 font-semibold hover:bg-slate-600 hover:text-slate-200 focus:ring-4 focus:outline-none focus:ring-slate-600 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-slate-800"
-             type="button">Add Event <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+             type="button"> Add Event <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
                 <!-- Dropdown menu -->
                 <div id="dropdownMenu" name="content" class="show z-10 bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
-                    <form>
+                    <form id="drop-down">
                         <div class="mb-6">
                         <label for="event" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Event</label>
                         <input type="text" id="event" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Event Description">
@@ -41,7 +41,7 @@
                         </div>
                         <div class="flex items-start mb-6">
                         <div class="flex items-center h-5">
-                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                        <button id="submit-button" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                     </form>
                     
                 </div>
@@ -58,64 +58,64 @@
                     <th>Time</th>
                 </tr>
                 <tr>
-                    <td id="box1" class="reactive">Appointment: sample text, text text text text text 
+                    <td id="box0600" class="reactive">Appointment: sample text, text text text text text 
                     </td>
                     <td>6:00AM</td>
                 </tr>    
                 <tr>   
-                    <td id="box2" class="reactive">sampleD2</td>
+                    <td id="box0700" class="reactive">sampleD2</td>
                     <td>7:00AM</td>
                 </tr>
                 <tr>
-                    <td id="box3" class="reactive">sampleD3</td>
+                    <td id="box0800" class="reactive">sampleD3</td>
                     <td>8:00AM</td>
                 </tr>    
                 <tr>    
-                    <td id="box4" class="reactive">sampleD4</td>
+                    <td id="box0900" class="reactive">sampleD4</td>
                     <td>9:00AM</td>
                 </tr>
                 <tr>    
-                    <td id="box5" class="reactive">sampleD5</td>
+                    <td id="box1000" class="reactive">sampleD5</td>
                     <td>10:00AM</td>
                 </tr>
                 <tr>    
-                    <td id="box6" class="reactive">sampleD6</td>
+                    <td id="box1100" class="reactive">sampleD6</td>
                     <td>11:00AM</td>
                 </tr>
                 <tr>    
-                    <td id="box7" class="reactive">sampleD7</td>
+                    <td id="box1200" class="reactive">sampleD7</td>
                     <td>12:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box8" class="reactive">sampleD8</td>
+                    <td id="box1300" class="reactive">sampleD8</td>
                     <td>1:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box9" class="reactive">sampleD9</td>
+                    <td id="box1400" class="reactive">sampleD9</td>
                     <td>2:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box10" class="reactive">sampleD10</td>
+                    <td id="box1500" class="reactive">sampleD10</td>
                     <td>3:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box11" class="reactive">sampleD11</td>
+                    <td id="box1600" class="reactive">sampleD11</td>
                     <td>4:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box12" class="reactive">sampleD12</td>
+                    <td id="box1700" class="reactive">sampleD12</td>
                     <td>5:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box13" class="reactive">sampleD13</td>
+                    <td id="box1800" class="reactive">sampleD13</td>
                     <td>6:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box14" class="reactive">sampleD14</td>
+                    <td id="box1900" class="reactive">sampleD14</td>
                     <td>7:00PM</td>
                 </tr>
                 <tr>    
-                    <td id="box15" class="reactive">sampleD15</td>
+                    <td id="box2000" class="reactive">sampleD15</td>
                     <td>8:00PM</td>
                 </tr>
             </table>
