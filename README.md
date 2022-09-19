@@ -7,7 +7,7 @@ Live Project: https://limericky84.github.io/The-Plan/
 
 We used Tailwind and css in the styling of the pages.
 
-# APIs used:
+## APIs used:
 
 * Moment.js for time organization
 * 
@@ -23,7 +23,7 @@ https://nerdcave.com/tailwind-cheat-sheet
 moment alternative API to call time to all of our pages: 
 https://vhudyma-blog.eu/the-best-momentjs-alternatives/
 
-# Directions for future development:
+## Directions for future development:
 
 Themes - Change the color and appearance of the pages to better suit various user preferences.
 
@@ -31,3 +31,6 @@ Dropdown Functionality - Ability to open a menu and input events in every cell o
 
 Moment Alternatives - Moment is being kept current but is no longer supported.  A more current time API could increase functionality.
 
+## Screenshot
+
+![img](https://github.com/LimeRicky84/The-Plan/blob/main/assets/media/The%20Plan%20-%20Google%20Chrome%206_7_2022%2012_50_55%20AM.png?raw=true)

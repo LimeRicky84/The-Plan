@@ -824,7 +824,6 @@ submitButton.addEventListener("click", function(event){
   event.preventDefault()
   
   console.log("submit")
-  console.log(events.value)
   var inputData = eventEl.value.trim()
 
   if (eventEl === "") {
